@@ -1,0 +1,20 @@
+.red {  /* if want to target the classes we have to put a dot before the class name. */
+    color: red;
+}
+
+/* Id shouldn´t be used for styling as they should be unique so therefore the code will not be reusable */
+#orange{
+    color: blue;
+}
+
+/* Id selectors are powerfull, they overwrite the class selections*/ 
+#purple {
+    color: purple;
+}
+
+/* Universal Selector */
+
+* {
+    color: saddlebrown;
+}
+

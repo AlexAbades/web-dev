@@ -1,0 +1,70 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    max-width: 576px;
+    /*
+    * set no mergins top and bottom, and equal margins left and rigth
+    * he left and right margins will be as big as possible,
+    * which keeps the 'body' centered on the page
+    */
+    margin: 0 auto;
+}
+
+/* Here we're targetting all 'p' and blockquote elements */ 
+p, 
+blockquote {
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+blockquote {
+    /*
+    * This short-hand for margin sets all 4 sides at once.
+    * It starts at the top and goes clockwise:
+    * top: 0, right: 0, bottom: 36px, left: 0
+    */
+    margin: 0 0 36px 0;
+    padding-left: 36px;
+    border-left: 6px solid #1c2023;
+    font-style: italic;
+}
+
+a {
+    /*
+    * Block elements by default occupy 100% of the width of their contanier
+    * This also enables margin top and bottom  
+     */
+    display: block; 
+    width: fit-content;  /* limit by the content size */ 
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 8px 16px;  /* the space between its content and its border */
+    background-color: #1c2023;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* We are targetting all the 'a' elements, but only while the user is hovering it */
+a:hover{
+    /* Adds a shadow under the element:
+    * Properties: 
+    * - Horizonatal separation (x distance): 0
+    * - Vertical separation (y distabnce): 5px 
+    * - Blur amount: 15px
+    * - Shadow color: Black at 25 % opacity 
+    */ 
+    box-shadow: 0px 1 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.finger {
+    /* This alters the default position of the icon, by separating it. */ 
+    position: relative;
+    bottom: 0.25rem;
+    margin-left: 0.25rem;
+}
+
+img {
+    padding-left: 100px;
+}

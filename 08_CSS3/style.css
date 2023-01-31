@@ -1,0 +1,38 @@
+main {
+    color: blue;
+}
+
+/* Link doesn´t get colored due to inheritance */
+a {
+    color: brown;
+    text-decoration-color: aqua; /* We change the underline */
+    border: 4px solid currentColor; /* we can change the border line, additionlly, we store the current color in the variable currentColor. */
+    background-color: green;
+}
+
+.block {
+    background-color: aqua;
+}
+.rgb {
+    background-color: blueviolet;
+    color: rgb(128, 0, 128); /* We can change the color using RGB notation */ 
+}
+
+/* It´s common to use either hhexadecimal or hsl  */
+.hexa {
+    color: #f00
+}
+
+.hsl {
+    color: #fff;
+    background-color: hsl(360, 100%, 25%)
+}
+
+.hexhsl {
+    background-color: hsl(300, 100%, 25%, 50%);
+}
+
+.opacity {
+    background-color: #f00;
+    opacity: 50%;
+}

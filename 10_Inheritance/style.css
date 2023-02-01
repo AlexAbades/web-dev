@@ -1,0 +1,14 @@
+/* We can inherit some proporties as the color,  */
+
+.container {
+    color: orangered
+}
+
+/* If we set the paragraph color, the inherit value will be overwriten. Then we'll see a  */
+p {
+    color: purple;
+}
+
+.anchor{
+    color: inherit
+}

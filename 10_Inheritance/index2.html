@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Non-inherited proporties</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner"></div>
+            <div class="inner"></div>
+            <div class="inner"></div>
+        </div>
+
+        <div>
+            <p>
+                The layout set pf proporties are not inherited by default
+                <ul>
+                    <li>Margins</li>
+                    <li>Paddings</li>
+                    <li>Height</li>
+                    <li>Border</li>
+                    <li>...</li>
+                </ul>
+
+            </p>
+        </div>
+
+        <div class="outer1">
+                <div class="inner1"></div>
+                <div class="inner1"></div>
+                <div class="inner1"></div>
+        </div>
+
+        <div>
+            <p>The background color seems to inherited ut it's actually not like this. The background from the inner divs are actually transparent. They act like windows. We can see it in the example below. </p>
+        </div>
+        
+        <div class="outer2">
+                <div class="inner2"></div>
+                <div class="inner2"></div>
+                <div class="inner2"></div>
+        </div>
+        
+        <div>
+            <p>We can still force the inner divs to inherit the ackground property from outer.</p>
+        </div>
+            
+        <div class="outer3">
+                <div class="inner3"></div>
+                <div class="inner3"></div>
+                <div class="inner3"></div>
+        </div>
+
+    </body>
+</html>

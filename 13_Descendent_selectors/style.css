@@ -1,0 +1,23 @@
+body {
+    font-size: 25px;
+}
+
+#First ul {
+    color: aqua;
+}
+
+.Second ul li a {
+    color: red;
+}
+
+dl > dt {
+    font-weight: 700;
+}
+
+.Sibl label ~ input {
+    padding: 5px 10px;
+}
+
+.Adjacent label + input {
+    padding: 5px 10px;
+}

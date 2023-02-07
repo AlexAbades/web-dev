@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BEM Documnetation</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>What is BEM?</h1>
+            <p>It stands for <strong>B</strong>lock <strong>E</strong>lement <strong>M</strong>odifier</p>
+
+            <div>
+                <h3>Block</h3>
+                <p>Block: Meaningful standalone entity</p>
+                <ul>
+                    <li>Header</li>
+                    <li>Menu bar</li>
+                    <li>Form</li>
+                </ul>
+                <p>They should mean something on its own.</p>
+                <p>Block names are usually single words, but we can also use a hyphen <strong>-</strong> to join words</p>
+            </div>
+
+           <div>
+               <h3>Elements</h3>
+                <p>Elements are Part of a block. Has a meaning that is tight to the block.</p>
+                <ul>
+                    <li>Heade Logo: header__logo</li>
+                    <li>Menu Item: menu__item</li>
+                    <li>Form Fields: form__fields</li>
+                </ul>
+                <p>Elements are typically separated with a doble underscore or dunderscore</p>
+           </div>
+
+            <div>
+                <h3>Modifiers</h3>
+                <p>A variant of the basic styles for a block or an element. Allows to no have to crete different ellement names for the same thing</p>
+                <p>Uses a block element class and a double hyphen to separate the modifying style</p>
+            </div>
+
+        </header>
+        
+
+        <main>
+            <h2>BEM in practice</h2>
+
+            <form class="form" method="POST">
+                <p class="form__group">
+                    <label class="form__label" for="name">Name:</label>
+                    <input class="input" type="text" name="name"  id="name" />
+                    <!-- We have to decide weather we want to make the inputs elements of this form or blocks that we would reuse  -->
+                </p>
+                <p class="form__group">
+                    <label class="form__label" for="email">Email:</label>
+                    <input class="input" type="email" name="email" id="email" />
+                </p>
+                <p class="form__group">
+                    <label class="form__label" for="oassword">Password:</label>
+                    <input class="input" type="password" name="password" id="password">
+                </p>
+
+                <button class="button" type="submit">Sign UP</button>
+
+            </form>
+        
+        </main>
+    </body>
+</html>

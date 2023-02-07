@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Descendent Selectors</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div id="First">
+                <p>Now we are going to put an example of Descendent selector. Basically how we can change specific items inside selected elements.</p>
+                <ul>
+                    <li>This is the first element.</li>
+                    <li>This is the second element.</li>
+                    <li>This is the third element. It has a <a href="https://github.com/AlexAbades/web-dev">link</a>.</li>
+                </ul>
+                <p>We can see that all elements inside the unordered list are siblings as they change all the color when targeting li element in the stylesheet.</p>
+            </div>
+
+            <div class="Second">
+                <p>If we want to target specific elements inside the ul element, we have to specify the parents of than element.</p>
+                <ul>
+                    <li>This is the first element.</li>
+                    <li>This is the second element.</li>
+                    <li>This is the third element. It has a <a href="https://github.com/AlexAbades/web-dev">link</a>.</li>
+                </ul>
+                <p>We can clearly see that now we are just targeting the a element, because we've specified so in the stylesheet.</p>
+            </div>
+
+            <p>It's not recommended, as it makes it difficult to reuse the code.</p>
+
+            <div>
+                <p>Instead we can use the child Approach. in the following example we have the <strong>dl</strong> element which is a definition list.</p>
+                <p>Then we have the <strong>dt</strong> or <strong>dd</strong>for definition. See the below example</p>
+
+                <dl>
+                    <dt>Dog</dt>
+                    <dd>A man's best friend.</dd>
+                </dl>
+
+                <p>When using the crocodile clip we are targeting the dt element which must be a direct child from dl element.</p>
+                <p>The problem is that if we put the <strong>dl</strong> element inside a div block it will no longer be a direct child.</p>
+            </div>
+
+
+            <h3>Sibling Convinator</h3>
+            <form class="Sibl">
+                <input type="text" />
+                <label>Hello!</label>
+                <input type="text" />
+                <input type="text" />
+            </form>
+
+            <p>All elements inside a ul, form or any other kind of element collector are siblings. Nevertheless, general sibling convintor, which uses <strong>~</strong> operator 
+                only allows us to select the direct elements after the element we are targeting.</p>
+
+            <div class="Adjacent">
+                <h3>Adjacent Sibling Convinator</h3>
+                <form>
+                    <input type="text" />
+                    <label>Hello!</label>
+                    <input type="text" />
+                    <input type="text" />
+                </form>
+                <p>We can see that adjacent convinator uses the <strong>+</strong> operator which allows us to select one element that comes directly after.</p>
+            </div>
+        </main>   
+    </body>
+</html>

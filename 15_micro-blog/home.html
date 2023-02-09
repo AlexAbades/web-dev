@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microblog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar__barnd">
+            <img src="microblog-logo.svg" alt="microblog-logo">Microblog
+        </div>
+
+        <ul class="navbar__navigation">
+            <li class="nvbar__navigation-item"><a href="#" class="navbar__link">Recent</a></li><!--The hashtag is to indicate that ther's no link at the moment  -->
+            <li class="nvbar__navigation-item"><a href="#" class="navbar__link">Calendar</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section>
+            <h1>Add a new entry</h1>
+            <!-- When using method = "POST" The data is sent somewhere else, not sent to the URL, it's send inside a network request that is separate.
+             POST is better when you have long forms and you don't want your URL long or wanna hide what you're sending a little bit better.
+            DEFAULT method is GET and it's going to send the data to the url.-->
+            <form class="form" action="/entry" method="post">
+                <p class="form__input">
+                    <label for="entry" class="form__label">Entry Contents</label>
+                    <textarea name="content" id="entry" class="form__textarea"></textarea>
+                </p>
+                <button type="submit" class="form__submit">Add entry</button>
+            </form>
+        </section>
+        <section>
+            <h1>Recent Posts</h1>
+            <article>
+                <div>
+                    <h2>A bit of chill day today</h2>
+                    <time datetime="09-02-2023">09 Feb</time>
+                </div>
+                <p>
+                    Today I couldn't do much of programing, but it's OK! Can' be awesome evety day now! 
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <section class="left">
+                <a href="#" class="footer__item">Made by Alex Abades Grimes</a>
+                <a href="#" class="footer__item">Other work</a>
+            </section>
+            <section class="right">
+                <div class="footer__column">
+                    <a href="#" class="footer__item">Recent</a>
+                    <a href="#" class="footer__item">Calendar</a>
+                </div>
+                <div class="footer_column">
+                    <a href="#" class="footer__item">About</a>
+                    <a href="#" class="footer__id">How this was made</a>
+                </div>
+            </section>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

@@ -19,7 +19,7 @@
         </ul>
     </header>
 
-    <main>
+    <main class="main">
         <section>
             <h1>Add a new entry</h1>
             <!-- When using method = "POST" The data is sent somewhere else, not sent to the URL, it's send inside a network request that is separate.
@@ -27,7 +27,7 @@
             DEFAULT method is GET and it's going to send the data to the url.-->
             <form class="form" action="/entry" method="post">
                 <p class="form__input">
-                    <label for="entry" class="form__label">Entry Contents</label>
+                    <label for="entry" class="form__label">Entry Contents:</label>
                     <textarea name="content" id="entry" class="form__textarea"></textarea>
                 </p>
                 <button type="submit" class="form__submit">Add entry</button>
@@ -35,13 +35,13 @@
         </section>
         <section>
             <h1>Recent Posts</h1>
-            <article>
+            <article class="entry">
                 <div>
-                    <h2>A bit of chill day today</h2>
-                    <time datetime="09-02-2023">09 Feb</time>
+                    <h2 class="entry__title">A bit of chill day today</h2>
+                    <time class="entry__date" datetime="09-02-2023">&#x2022; 09 Feb</time>
                 </div>
-                <p>
-                    Today I couldn't do much of programing, but it's OK! Can' be awesome evety day now! 
+                <p class="entry__content">
+                    Today I couldn't do much of programing, but it's OK! Can' be awesome every day now! 
                 </p>
             </article>
         </section>
@@ -58,9 +58,9 @@
                     <a href="#" class="footer__item">Recent</a>
                     <a href="#" class="footer__item">Calendar</a>
                 </div>
-                <div class="footer_column">
+                <div class="footer__column">
                     <a href="#" class="footer__item">About</a>
-                    <a href="#" class="footer__id">How this was made</a>
+                    <a href="#" class="footer__item">How this was made</a>
                 </div>
             </section>
         </div>
